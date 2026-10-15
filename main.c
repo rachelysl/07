@@ -1,15 +1,19 @@
 #include <stdio.h>
+void f(void);
+
 int main(void)
 {
-    int flag=1;
-    int y;
-
-    while(flag!=0)
+    int i;
+    for(i=0;i<5;i++)
     {
-        y=3;
-        flag=0;
+        f();
     }
-    y=4;
-
     return 0;
+}
+
+void f(void)
+{
+    int i;
+    for(i=0;i<10;i++)
+      printf("#");
 }
